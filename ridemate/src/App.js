@@ -1,16 +1,16 @@
-import React from'react';
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar/>
-        <Switch>
-          <Route exact path='/' exact />
-        </Switch>
+        <Routes>
+          <Route exact path='/' />
+        </Routes>
       </Router>
     </>
     );
